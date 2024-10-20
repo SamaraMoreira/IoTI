@@ -1,0 +1,158 @@
+[
+    {
+        "id": "dccbae51f974fb68",
+        "type": "tab",
+        "label": "Fluxo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "408598f2ef6cecd4",
+        "type": "mqtt in",
+        "z": "dccbae51f974fb68",
+        "name": "",
+        "topic": "/ThinkIOT/temp",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e786bfd30ce491f3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 360,
+        "y": 140,
+        "wires": [
+            [
+                "4ef0ecf4a6379220"
+            ]
+        ]
+    },
+    {
+        "id": "b09672d38aba16d4",
+        "type": "mqtt in",
+        "z": "dccbae51f974fb68",
+        "name": "",
+        "topic": "/ThinkIOT/hum",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e786bfd30ce491f3",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 360,
+        "y": 240,
+        "wires": [
+            [
+                "4672bff4d3b5d252"
+            ]
+        ]
+    },
+    {
+        "id": "4ef0ecf4a6379220",
+        "type": "ui_gauge",
+        "z": "dccbae51f974fb68",
+        "name": "TEMP",
+        "group": "c0c2b06ffae8ecbb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00c8f0",
+            "#1355be",
+            "#990000"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 610,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4672bff4d3b5d252",
+        "type": "ui_gauge",
+        "z": "dccbae51f974fb68",
+        "name": "",
+        "group": "c0c2b06ffae8ecbb",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Umidade",
+        "label": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "60",
+        "colors": [
+            "#b30000",
+            "#00ace6",
+            "#3a5ecb"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 640,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e786bfd30ce491f3",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "c0c2b06ffae8ecbb",
+        "type": "ui_group",
+        "name": "ThinkIOT",
+        "tab": "3a10e475eac7b682",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3a10e475eac7b682",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "Dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
