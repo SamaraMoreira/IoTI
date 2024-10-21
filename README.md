@@ -3,7 +3,7 @@
 ## Integrantes
 - Samara de Oliveira Moreira - RM552302
 - Vinicius Monteiro Manfrin - RM552293
-- Angelica de Melo
+- Angelica de Melo - RM550776
 - Giovanni Sguizzardi - RM551261
 - Nicolas E. Inohue - RM98057
 - Marcel Prado - RM99841
